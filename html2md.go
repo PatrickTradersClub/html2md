@@ -14,7 +14,7 @@ func P() *Rule {
 		Patterns: []string{"p"},
 		Replacement: func(innerHTML string, attrs []string) string {
 			if len(attrs) > 1 {
-				return "\n\n" + attrs[1] + "\n"
+				return  attrs[1] + "\n"
 			}
 			return ""
 		},
